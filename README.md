@@ -105,7 +105,7 @@
     }
     @media (max-width: 600px) {
       .qr-code img {
-        max-width: 240px;
+        max-width: 360px;
       }
       .contact-row {
         flex-direction: column;
