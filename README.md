@@ -1,9 +1,17 @@
 <html lang="ro">
 <head>
+  <!-- Favicon standard -->
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <!-- Pentru shortcut pe mobil (iOS/Android) -->
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.png">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carte-vizită Valentin Nedea</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -17,43 +25,44 @@
       margin: 0 auto;
       padding: 10px;
     }
-
-    /* Header cu logo și nume */
-    .header {
-      display: flex;
-      align-items: flex-start;
-      gap: 15px;
+    .qr-code {
+      text-align: left;
+      margin: 30px 0;
+    }
+    .qr-code img {
+      display: inline-block;
+      max-width: 100%;
+      height: auto;
+    }
+    .logo {
+      text-align: left;
       margin-bottom: 20px;
     }
-    .header img {
-      max-width: 120px;
+    .logo img {
+      max-width: 250px;
     }
-    .name-block {
-      display: flex;
-      flex-direction: column;
-    }
-    .name-block .name {
+    .name {
       font-size: 26px;
       font-weight: 400;
+      text-align: left;
     }
-    .name-block .surname {
+    .surname {
       font-size: 26px;
       font-weight: 700;
+      text-align: left;
     }
-    .name-block .title {
+    .title {
       font-size: 18px;
       font-weight: 400;
-      margin-top: 4px;
+      margin-bottom: 20px;
+      text-align: left;
     }
-
-    /* Linia mov decorativă */
     .purple-line {
       border-left: 6px solid #a57bb3;
+      border-top: 2px solid #a57bb3;
       padding-left: 12px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
-
-    /* Contact */
     .contact-info {
       font-size: 16px;
       color: #555;
@@ -62,8 +71,6 @@
     .contact-row {
       display: flex;
       align-items: center;
-      justify-content: flex-start;
-      gap: 10px;
       margin-bottom: 10px;
       flex-wrap: wrap;
     }
@@ -77,32 +84,18 @@
       padding: 6px 12px;
       border-radius: 6px;
       text-decoration: none;
+      margin-left: 10px;
       font-size: 14px;
-      transition: background 0.3s;
     }
     .contact-row a.button:hover {
       background: #8c629a;
     }
-
-    /* QR code */
-    .qr-code {
-      margin-bottom: 30px;
-    }
-    .qr-code img {
-      max-width: 200px;
-      height: auto;
-      display: block;
-      margin-bottom: 8px;
-    }
-
-    /* Adresă */
     .address {
       font-size: 15px;
       color: #555;
       border-top: 3px solid #a57bb3;
       padding-top: 15px;
     }
-
     a {
       color: inherit;
       text-decoration: none;
@@ -110,11 +103,9 @@
     a:hover {
       text-decoration: underline;
     }
-
     @media (max-width: 600px) {
-      .header {
-        flex-direction: column;
-        align-items: flex-start;
+      .qr-code img {
+        max-width: 240px;
       }
       .contact-row {
         flex-direction: column;
@@ -123,30 +114,22 @@
       .contact-row a.button {
         margin: 6px 0 0 0;
       }
-      .qr-code img {
-        max-width: 180px;
-      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">
-      <img src="logo-bca.png" alt="Logo Fortem">
-      <div class="name-block">
-        <div class="name">VALENTIN</div>
-        <div class="surname">NEDEA</div>
-        <div class="title">Manager Zonal București & Constanța</div>
-      </div>
-    </div>
-
-    <div class="purple-line"></div>
-
     <div class="qr-code">
-      <p>Scanează QR pentru vCard</p>
       <img src="qr_nedea.jpg" alt="QR code pentru vCard">
     </div>
-
+    <div class="logo">
+      <img src="logo-bca.png" alt="Logo Fortem">
+    </div>
+    <div class="purple-line">
+      <div class="name">VALENTIN</div>
+      <div class="surname">NEDEA</div>
+      <div class="title">Manager Zonal București & Constanța</div>
+    </div>
     <div class="contact-info">
       <div class="contact-row">
         <span>📞 <a href="tel:+40742063318">+4 0742 063 318</a></span>
@@ -157,11 +140,10 @@
         <a class="button" href="mailto:valentin.nedea@fortem.ro">Email</a>
       </div>
       <div class="contact-row">
-        <span>📥 <a href="valentin-nedea.vcf" download>Descarcă vCard</a></span>
+        <span>📥 <a href="valentin-nedea.vcf" download>Salvează contact</a></span>
         <a class="button" href="valentin-nedea.vcf" download>vCard</a>
       </div>
     </div>
-
     <div class="address">
       Băneasa Business & Technology Park<br>
       Șoseaua București - Ploiești 42-44<br>
