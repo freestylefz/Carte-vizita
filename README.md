@@ -31,6 +31,8 @@
     .qr-code img {
       width: 320px;
       height: 320px;
+	  display:block;
+		margin:0 auto;
     }
     .logo {
       text-align: left;
