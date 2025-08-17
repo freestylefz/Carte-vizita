@@ -102,7 +102,7 @@
     a:hover {
       text-decoration: underline;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 500px) {
       .qr-code img {
         max-width: 320px;
       }
