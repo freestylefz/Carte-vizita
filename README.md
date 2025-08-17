@@ -1,17 +1,17 @@
-
 <html lang="ro">
 <head>
-	<!-- Favicon standard -->
-<link rel="icon" href="favicon.png" type="image/png">
+  <!-- Favicon standard -->
+  <link rel="icon" href="favicon.png" type="image/png">
 
-<!-- Pentru shortcut pe mobil (iOS/Android) -->
-<link rel="apple-touch-icon" href="favicon.png">
-<link rel="shortcut icon" href="favicon.png">
+  <!-- Pentru shortcut pe mobil (iOS/Android) -->
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.png">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QR Valentin Nedea</title>
+  <title>Carte-vizită Valentin Nedea</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -25,14 +25,13 @@
       margin: 0 auto;
     }
     .qr-code {
-      text-align: center;
-      margin-bottom: 20px;
+      text-align: center;   /* Centrează pe orizontală */
+      margin: 20px 0;
     }
     .qr-code img {
-      width: 320px;
-      height: 320px;
-	  display:block;
-		margin:0 auto;
+      display: inline-block;
+      max-width: 100%;      /* Responsive */
+      height: auto;
     }
     .logo {
       text-align: left;
@@ -85,7 +84,7 @@
       <img src="qr_nedea.jpg" alt="QR code pentru vCard">
     </div>
     <div class="logo">
-      <img src="logo-bca.png" alt="Fortem Logo">
+      <img src="logo-bca.png" alt="Logo Fortem">
     </div>
     <div class="purple-line">
       <div class="name">VALENTIN</div>
