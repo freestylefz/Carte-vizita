@@ -68,8 +68,27 @@
       color: #555;
       margin-bottom: 30px;
     }
-    .contact-info div {
-      margin-bottom: 6px;
+    .contact-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    .contact-row span {
+      flex: 1;
+    }
+    .contact-row a.button {
+      display: inline-block;
+      background: #a57bb3;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-left: 10px;
+      font-size: 14px;
+    }
+    .contact-row a.button:hover {
+      background: #8c629a;
     }
     .address {
       font-size: 15px;
@@ -88,6 +107,13 @@
       .qr-code img {
         max-width: 240px;
       }
+      .contact-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .contact-row a.button {
+        margin: 6px 0 0 0;
+      }
     }
   </style>
 </head>
@@ -105,8 +131,18 @@
       <div class="title">Manager Zonal București & Constanța</div>
     </div>
     <div class="contact-info">
-      <div>📞 <a href="tel:+40742063318">+4 0742 063 318</a></div>
-      <div>✉️ <a href="mailto:valentin.nedea@fortem.ro">valentin.nedea@fortem.ro</a></div>
+      <div class="contact-row">
+        <span>📞 <a href="tel:+40742063318">+4 0742 063 318</a></span>
+        <a class="button" href="tel:+40742063318">Sună</a>
+      </div>
+      <div class="contact-row">
+        <span>✉️ <a href="mailto:valentin.nedea@fortem.ro">valentin.nedea@fortem.ro</a></span>
+        <a class="button" href="mailto:valentin.nedea@fortem.ro">Email</a>
+      </div>
+      <div class="contact-row">
+        <span>📥 <a href="valentin-nedea.vcf" download>Salvează contact</a></span>
+        <a class="button" href="valentin-nedea.vcf" download>vCard</a>
+      </div>
     </div>
     <div class="address">
       Băneasa Business & Technology Park<br>
