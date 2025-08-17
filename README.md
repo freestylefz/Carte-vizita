@@ -23,14 +23,15 @@
     .container {
       max-width: 500px;
       margin: 0 auto;
+      padding: 10px;
     }
     .qr-code {
-      text-align: center;   /* Centrează pe orizontală */
-      margin: 20px 0;
+      text-align: center;
+      margin: 30px 0;
     }
     .qr-code img {
       display: inline-block;
-      max-width: 100%;      /* Responsive */
+      max-width: 100%;
       height: auto;
     }
     .logo {
@@ -58,13 +59,29 @@
     }
     .purple-line {
       border-left: 6px solid #a57bb3;
+      border-top: 2px solid #a57bb3;
       padding-left: 12px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
     .contact-info {
       font-size: 16px;
       color: #555;
       margin-bottom: 30px;
+    }
+    .contact-info div {
+      margin-bottom: 8px;
+    }
+    .contact-info a {
+      display: inline-block;
+      background: #a57bb3;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      background: #8c629a;
     }
     .address {
       font-size: 15px;
@@ -72,9 +89,16 @@
       border-top: 3px solid #a57bb3;
       padding-top: 15px;
     }
-    a {
-      color: inherit;
-      text-decoration: none;
+    @media (max-width: 600px) {
+      .qr-code img {
+        max-width: 240px;
+      }
+      .name, .surname, .title {
+        text-align: center;
+      }
+      .logo {
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -92,8 +116,9 @@
       <div class="title">Manager Zonal București & Constanța</div>
     </div>
     <div class="contact-info">
-      <div><a href="tel:+40742063318">+4 0742 063 318</a></div>
-      <div><a href="mailto:valentin.nedea@fortem.ro">valentin.nedea@fortem.ro</a></div>
+      <div><a href="tel:+40742063318">📞 Sună-mă</a></div>
+      <div><a href="mailto:valentin.nedea@fortem.ro">✉️ Trimite email</a></div>
+      <div><a href="valentin-nedea.vcf" download>📥 Salvează contact</a></div>
     </div>
     <div class="address">
       Băneasa Business & Technology Park<br>
