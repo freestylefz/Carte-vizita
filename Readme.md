@@ -20,7 +20,7 @@
       padding: 20px;
     }
     .container {
-      max-width: 500px;
+      max-width: 400px;
       margin: 0 auto;
       padding: 10px;
     }
@@ -102,7 +102,7 @@
     a:hover {
       text-decoration: underline;
     }
-    @media (max-width: 500px) {
+    @media (max-width: 400px) {
       .qr-code img {
         max-width: 320px;
       }
